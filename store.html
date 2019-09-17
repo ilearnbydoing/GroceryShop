@@ -29,8 +29,7 @@ h1 {
 }
 
 /* Add padding BETWEEN each column */
-.row,
-.row > .column {
+.column {
   padding: 8px;
 }
 
@@ -87,7 +86,9 @@ h1 {
     margin: 2px;
     display: none;
   }
-  
+  @media screen and (max-width: 500px) {
+    .filterDiv{ float: none; width: 100%}
+  }
   .show {
     display: block;
   }
