@@ -96,10 +96,77 @@ h1 {
     margin-top: 20px;
     overflow: hidden;
   }
+   /* header starts */
+   .header {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active1 {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
   
+  .header-right {
+    float: none;
+  }
+}
+    /* header ends */
+    /* footer starts */
+    .footer {
+      padding: 20px;
+   width: 100%;
+   background-color: #222;;
+   color: white;
+   text-align: center;
+}
+    /* footer ends */
   </style>
 </head>
 <body>
+<!-- Header Starts -->
+<div class="header">
+    <a href="index.html" class="logo">GroceryShop</a>
+    <div class="header-right">
+        <a class="" href="index.html">Home</a>
+      <a class="active1" href="store.html">Store</a>
+      <a href="checkout.html">Checkout</a>
+    </div>
+  </div>
+<!-- Header Ends -->
 
 <!-- MAIN (Center website) -->
 <div class="main">
@@ -110,12 +177,12 @@ h1 {
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('fruits&vegetable')"> Fruits & Vegetable</button>
-  <button class="btn" onclick="filterSelection('foodgrains oil masala')"> FOODGRAINS,OIL&MASALA</button>
- <button class="btn" onclick="filterSelection('BEVERAGE')"> BEVERAGE</button>
- <button class="btn" onclick="filterSelection('SNACKS&BRANDED FOODS')">SNACKS&BRANDED FOODS </button>
- <button class="btn" onclick="filterSelection('BEAUTY&HYGIENE')"> BEAUTY&HYGINE</button>
- <button class="btn" onclick="filterSelection('CLEANING&HOUSEHOLD')"> CLEANING&HOSUEHOLD</button>
- <button class="btn" onclick="filterSelection('EGGS,MEAT&FISH')"> EGGS,MEAT&FISH</button>
+  <button class="btn" onclick="filterSelection('foodgrains')">Foodgrains, Oil & Masala</button>
+ <button class="btn" onclick="filterSelection('beverage')"> Beverage</button>
+ <button class="btn" onclick="filterSelection('foods')">Branded, Snack & Foods </button>
+ <button class="btn" onclick="filterSelection('beauty')"> Beauty & Hygine</button>
+ <button class="btn" onclick="filterSelection('cleaning')"> Cleaning & Household</button>
+ <button class="btn" onclick="filterSelection('eggs')"> Eggs, Meats & Fish</button>
  
 </DIV>
 <!-- FOOD ITEMS &MANY MORE -->
@@ -127,6 +194,7 @@ h1 {
      <img src="images/onion.jpeg" alt="ONION" width="256" height="256">
       <h4>ONION</h4>
       <p>RS 39/-..</p>
+      <a href="checkout.html">Add to cart</a>
     </div>
   </div>
   <div class="filterDiv fruits&vegetable">
@@ -134,6 +202,7 @@ h1 {
     <img src="images/potato.jpeg" alt="POTATO" width="256" height="256">
       <h4>POTATO</h4>
       <p>RS 25/-..</p>
+      <a href="checkout.html">Add to cart</a>
     </div>
 </div>
   <div class="filterDiv fruits&vegetable">
@@ -141,6 +210,7 @@ h1 {
     <img src="images/tomato.jpeg" alt="TOMATO" width="256" height="256">
       <h4>TOMATO</h4>
       <p>RS 10/-..</p>
+      <a href="checkout.html">Add to cart</a>
     </div>
 </div>
 </div>
@@ -152,6 +222,7 @@ h1 {
      <img src="images/saffola.jpeg" alt="ONION" width="256" height="256">
       <h4>Saffola Oil</h4>
       <p>RS 39/-..</p>
+      <a href="checkout.html">Add to cart</a>
     </div>
   </div>
   <div class="filterDiv foodgrains oil masala">
@@ -159,6 +230,7 @@ h1 {
     <img src="images/besan.jpeg" alt="POTATO" width="256" height="256">
       <h4>Besan</h4>
       <p>RS 25/-..</p>
+      <a href="checkout.html">Add to cart</a>
     </div>
 </div>
   <div class="filterDiv foodgrains oil masala">
@@ -166,10 +238,152 @@ h1 {
     <img src="images/poha.jpeg" alt="TOMATO" width="256" height="256">
       <h4>Poha</h4>
       <p>RS 10/-..</p>
+      <a href="checkout.html">Add to cart</a>
     </div>
 </div>
 </div>
 <!-- 2 Row Ends -->
+<!-- 3 Row Starts -->
+<div class="row">
+    <div class="filterDiv beverage">
+      <div class="content">
+       <img src="images/pepsi.jpeg" alt="pepsi" width="256" height="256">
+        <h4>Pepsi</h4>
+        <p>RS 39/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+    </div>
+    <div class="filterDiv beverage">
+      <div class="content">
+      <img src="images/coke.jpeg" alt="Coke" width="256" height="256">
+        <h4>Coke</h4>
+        <p>RS 45/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+    <div class="filterDiv beverage">
+      <div class="content">
+      <img src="images/frooti.jpeg" alt="frooti" width="256" height="256">
+        <h4>Frooti</h4>
+        <p>RS 10/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+  </div>
+  <!-- 3 Row Ends -->
+
+  <!-- 4 Row Starts -->
+<div class="row">
+    <div class="filterDiv foods">
+      <div class="content">
+       <img src="images/kurkure.jpeg" alt="kurkure" width="256" height="256">
+        <h4>Kurkure</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+    </div>
+    <div class="filterDiv foods">
+      <div class="content">
+      <img src="images/maggi.jpeg" alt="Maggi" width="256" height="256">
+        <h4>Maggi</h4>
+        <p>RS 45/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+    <div class="filterDiv foods">
+      <div class="content">
+      <img src="images/pasta.jpeg" alt="pasta" width="256" height="256">
+        <h4>Pasta</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+  </div>
+  <!-- 4 Row Ends -->
+   <!-- 5 Row Starts -->
+<div class="row">
+    <div class="filterDiv beauty">
+      <div class="content">
+       <img src="images/fairlovely.jpeg" alt="Fair and Lovely" width="256" height="256">
+        <h4>Fair & Lovely</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+    </div>
+    <div class="filterDiv beauty">
+      <div class="content">
+      <img src="images/nivea.jpeg" alt="Nivea" width="256" height="256">
+        <h4>Nivea</h4>
+        <p>RS 45/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+    <div class="filterDiv beauty">
+      <div class="content">
+      <img src="images/ponds.jpeg" alt="Ponds" width="256" height="256">
+        <h4>Ponds</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+  </div>
+  <!-- 5 Row Ends -->
+   <!-- 6 Row Starts -->
+<div class="row">
+    <div class="filterDiv cleaning">
+      <div class="content">
+       <img src="images/lizol.jpeg" alt="Lizol" width="256" height="256">
+        <h4>Lizol</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+    </div>
+    <div class="filterDiv cleaning">
+      <div class="content">
+      <img src="images/harpic.jpeg" alt="Harpic" width="256" height="256">
+        <h4>Harpic</h4>
+        <p>RS 45/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+    <div class="filterDiv cleaning">
+      <div class="content">
+      <img src="images/dettol.jpeg" alt="Dettol" width="256" height="256">
+        <h4>Dettol</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+  </div>
+  <!-- 6 Row Ends -->
+   <!-- 7 Row Starts -->
+<div class="row">
+    <div class="filterDiv eggs">
+      <div class="content">
+       <img src="images/eggs.jpeg" alt="Eggs" width="256" height="256">
+        <h4>Eggs</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+    </div>
+    <div class="filterDiv eggs">
+      <div class="content">
+      <img src="images/meat.jpeg" alt="Meat" width="256" height="256">
+        <h4>Meat</h4>
+        <p>RS 45/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+    <div class="filterDiv eggs">
+      <div class="content">
+      <img src="images/fish.jpeg" alt="Fish" width="256" height="256">
+        <h4>Fish</h4>
+        <p>RS 20/-..</p>
+        <a href="checkout.html">Add to cart</a>
+      </div>
+  </div>
+  </div>
+  <!-- 7 Row Ends -->
 <!-- END GRID -->
 </div>
 
@@ -180,50 +394,57 @@ h1 {
 </div>
 </div>
 
+<!-- Footer Starts -->
+<div class="footer">
+    <p>Copyright &copy; GroceryShop 2019.</p>
+  </div>
+<!-- Footer Ends -->
+
 <script>
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("filterDiv");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-  
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-  }
-  
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
       }
     }
-    element.className = arr1.join(" ");
-  }
-  
-  // Add active class to the current button (highlight it)
-  var btnContainer = document.getElementById("myBtnContainer");
-  var btns = btnContainer.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-  </script>
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
 
 </body>
 </html>
